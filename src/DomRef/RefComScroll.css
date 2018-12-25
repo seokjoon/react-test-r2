@@ -1,0 +1,22 @@
+
+.scroll_inner {
+	width: 100%;
+	height: 650px;
+	background: linear-gradient(white, black);
+}
+
+.scroll {
+	border: 1px solid black;
+	height: 300px;
+	width: 300px;
+	overflow: auto;
+	position: relative;
+}
+
+.failure {
+	background-color: lightcoral;
+}
+
+.success {
+	background-color: lightgreen;
+}
