@@ -5,12 +5,13 @@ import * as serviceWorker from './serviceWorker';
 //import App from './App';
 //import ComFunc from "./ComFunc/ComFunc";
 //import Css from "./Styling/Css";
-import CssModule from "./Styling/CssModule";
+//import CssModule from "./Styling/CssModule";
 //import EventHandling from "./EventHandling/EventHandling";
 //import LifeCycleContainer from "./Lifecycle/LifeCycleContainer";
 //import LoopMap from "./LoopMap/LoopMap";
 //import PropState from "./PropState/PropState";
 //import RefCom from "./DomRef/RefCom";
+import Sass from "./Styling/Sass";
 //import Validate from "./DomRef/Validate";
 
 
@@ -22,7 +23,8 @@ import CssModule from "./Styling/CssModule";
 //ReactDOM.render(<PropState nameCom="test" numCom={1} />, document.getElementById('root'));
 //ReactDOM.render(<RefCom/>, document.getElementById('root'));
 //ReactDOM.render(<Css/>, document.getElementById('root'));
-ReactDOM.render(<CssModule/>, document.getElementById('root'));
+//ReactDOM.render(<CssModule/>, document.getElementById('root'));
+ReactDOM.render(<Sass/>, document.getElementById('root'));
 //ReactDOM.render(<Validate/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
