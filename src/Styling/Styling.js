@@ -1,8 +1,8 @@
 import React, {Component, Fragment} from 'react';
 
-import './Css.css'; //import style1 from './Css.css';
+import './Styling1.css'; //import style1 from './Styling1.css';
 
-class Css extends Component {
+class Styling extends Component {
 	render() {
 
 		const style0 = {
@@ -15,9 +15,11 @@ class Css extends Component {
 			<Fragment>
 				<div style={style0}> Styling </div>
 				<div className="div1"> Div1 </div> { /* <div className={style1.div1}> Div1 </div> */ }
+
 			</Fragment>
+
 		);
 	}
 }
 
-export default Css;
+export default Styling;
