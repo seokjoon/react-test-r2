@@ -11,7 +11,8 @@ import * as serviceWorker from './serviceWorker';
 //import LoopMap from "./LoopMap/LoopMap";
 //import PropState from "./PropState/PropState";
 //import RefCom from "./DomRef/RefCom";
-import Sass from "./Styling/Sass";
+//import Sass from "./Styling/Sass";
+import SassButton from "./Styling/SassButton";
 //import Validate from "./DomRef/Validate";
 
 
@@ -24,7 +25,8 @@ import Sass from "./Styling/Sass";
 //ReactDOM.render(<RefCom/>, document.getElementById('root'));
 //ReactDOM.render(<Css/>, document.getElementById('root'));
 //ReactDOM.render(<CssModule/>, document.getElementById('root'));
-ReactDOM.render(<Sass/>, document.getElementById('root'));
+//ReactDOM.render(<Sass/>, document.getElementById('root'));
+ReactDOM.render(<SassButton/>, document.getElementById('root'));
 //ReactDOM.render(<Validate/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
