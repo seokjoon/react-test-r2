@@ -26,14 +26,25 @@ class PropState extends Component {
 	};
 
 	render() {
+
+		const { nameCom, numCom } = this.props;
+		const { cnt, /* item, items */ } = this.state;
+
 		return (
 			<Fragment>
-				<div>
+				{ /* <div>
 					{ (typeof null !== "undefined") ? this.props.nameCom + this.props.numCom : null }
 				</div>
 				<div>
 					{ this.state.cnt } &nbsp;
 					<button onClick={() => { this.setState({ cnt: this.state.cnt + 1 }) }}>ADD</button>
+				</div> */ }
+				<div>
+					{ (typeof null !== "undefined") ? nameCom + numCom : null }
+				</div>
+				<div>
+					{ cnt } &nbsp;
+					<button onClick={() => { this.setState({ cnt: cnt + 1 }) }}>ADD</button>
 				</div>
 			</Fragment>
 		);
