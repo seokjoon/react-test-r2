@@ -2,8 +2,12 @@ import React, {Component} from 'react';
 import TodoItem from "../TodoItem";
 
 class TodoList extends Component {
-	render() {
 
+	shouldComponentUpdate(nextProps, nextState, nextContext) {
+		return this.props.todos !== nextProps.todos;
+	}
+
+	render() {
 		const { todos, onRemove, onToggle } = this.props;
 		const todoList = todos.map((todo) => (
 				<TodoItem

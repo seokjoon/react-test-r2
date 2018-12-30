@@ -5,9 +5,14 @@ import classNames from 'classnames/bind';
 const st = classNames.bind(styles);
 
 class TodoItem extends Component {
+
+	shouldComponentUpdate(nextProps, nextState, nextContext) {
+		return this.props.done !== nextProps.done;
+	}
+
 	render() {
 
-		const {done, children, onToggle, onRemove} = this.props;
+		const { children, done, onRemove, onToggle, } = this.props;
 
 		return (
 			<div className={st('todo-item')} onClick={onToggle}>
