@@ -11,8 +11,9 @@ import * as serviceWorker from './serviceWorker';
 //import LifeCycleContainer from "./Lifecycle/LifeCycleContainer";
 //import LoopMap from "./LoopMap/LoopMap";
 //import PropState from "./PropState/PropState";
+import ReduxActionsTodoList from "./ReduxActionsTodoList/ReduxActionsTodoList";
 //import ReduxCounter from "./ReduxCounter/containers/ReduxCounter";
-import ReduxCounterMulti from "./ReduxCounterMulti/containers/ReduxCounterMulti";
+//import ReduxCounterMulti from "./ReduxCounterMulti/containers/ReduxCounterMulti";
 //import RefCom from "./DomRef/RefCom";
 //import Sass from "./Styling/Sass";
 //import SassButton from "./Styling/SassButton";
@@ -21,10 +22,12 @@ import ReduxCounterMulti from "./ReduxCounterMulti/containers/ReduxCounterMulti"
 
 import { createStore } from "redux";
 //import reducers from './ReduxCounter/reducers';
-import reducers from './ReduxCounterMulti/reducers';
+//import reducers from './ReduxCounterMulti/reducers';
 import { Provider } from 'react-redux';
 //const store = createStore(reducers);
-const store = createStore(reducers, window.devToolsExtension && window.devToolsExtension());
+//const store = createStore(reducers, window.devToolsExtension && window.devToolsExtension());
+import modules from './ReduxActionsTodoList/modules';
+const store = createStore(modules, window.devToolsExtension && window.devToolsExtension());
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 //ReactDOM.render(<ComFunc/>, document.getElementById('root'));
@@ -35,8 +38,9 @@ const store = createStore(reducers, window.devToolsExtension && window.devToolsE
 //ReactDOM.render(<LoopMap />, document.getElementById('root'));
 //ReactDOM.render(<PropState nameCom="test" numCom={1} />, document.getElementById('root'));
 //ReactDOM.render(<RefCom/>, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><ReduxActionsTodoList/></Provider>, document.getElementById('root'));
 //ReactDOM.render(<Provider store={store}><ReduxCounter/></Provider>, document.getElementById('root'));
-ReactDOM.render(<Provider store={store}><ReduxCounterMulti/></Provider>, document.getElementById('root'));
+//ReactDOM.render(<Provider store={store}><ReduxCounterMulti/></Provider>, document.getElementById('root'));
 //ReactDOM.render(<Sass/>, document.getElementById('root'));
 //ReactDOM.render(<SassButton/>, document.getElementById('root'));
 //ReactDOM.render(<TestTodoList/>, document.getElementById('root'));
